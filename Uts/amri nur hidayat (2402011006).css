@@ -1,0 +1,44 @@
+        td,
+        th{
+            border: 1px solid rgb(255, 0, 98);
+            padding: 10px;
+        }
+
+        th {
+            background-color: rgb(0, 26, 255);
+            color: rgb(252, 249, 249);
+            border-bottom: 1px solid rgb(255, 37, 244);
+        }
+
+        table {
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        tbody>tr{
+            cursor: pointer;
+        }
+
+        tbody>tr:hover {
+            background-color: rgb(255, 8, 8);
+            color: rgb(227, 227, 227);
+        }
+
+        tr:nth-child(odd) {
+            background-color: #e7e7e7;
+        }
+
+        .tbl-responsive {
+            overflow-x: auto;
+            width: 300px;
+        }
+
+    
+        caption {
+            background-color: rgb(38, 0, 255);
+            border: 5px solid rgb(255, 0, 0);
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+
