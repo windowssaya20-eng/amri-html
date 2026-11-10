@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>biodata</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <form action="proses.html" method="post">
+        <label for="">Nama</label><input class="form-control" type="text" name="nama" id="nama" value="Budi"><br>
+        <label for="">Tempat Lahir</label><input class="form-control" type="text" name="tempt_lahir" id="temp_lahir" value="Dharmasraya"><br>
+        <label for="">Tanggal Lahir</label><input class="form-control" type="date" name="tgl_lahir" id="temp_lahir" value="2005-11-10">
+       
+
+        <p>hobi (bisa lebih dari 1 pilihan)</p>
+        <label for="berenang">berenang</label><input type="checkbox" name="hobi[]" id="berenang" value="berenang">
+        <label for="membaca">membaca</label><input type="checkbox" name="hobi[]" id="membaca" value="membaca">
+        <label for="melukis">melukis</label><input type="checkbox" name="hobi[]" id="melukis" value="melukis">
+        <br>
+        <p>jenis kelamin</p>
+        <label for="l">Laki-laki</label><input type="radio" name="jk" id="l" value="L">
+        <label for="p">Perempuan</label><input type="radio" name="jk" id="p" value="P"><br> 
+
+        <p>Dekripsikan tentang kamu</p>
+        <textarea name="deskripsi" id="">Saya adalah........</textarea>
+
+        <select name="agama" id="">
+            <option value="1">Islam</option>
+            <option value="2">Katholik</option>
+            <option value="3">Protestan</option>
+            <option value="4">Hindu</option>
+            <option value="5">Budha</option>
+        </select>
+        <input type="submit" value="submit">
+
+
+    </form>
+    
+</body>
+</html>
