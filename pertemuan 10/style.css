@@ -1,0 +1,63 @@
+:root {
+    --sidebar-width:260px;
+    --active-menu: linear-gradient(140deg, blue, #8a54e2);
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+#wrapper {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+#sidebar {
+  width: var(--sidebar-width);
+  min-width: var(--sidebar-width);
+  transition: margin-left var(--transition-speed) ease;
+  z-index: 1050;
+}
+
+
+.sidebar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.75rem;
+    margin: 0.2rem 0.75rem;
+    font-weight: 400;
+
+}
+
+.sidebar-nav .nav-link.active {
+    background: var(--active-menu);
+    color: #fff;
+
+}
+.sidebar-nav .nav-link:hover {
+    background-color: rgb(93, 96, 236);
+    color:#fff;
+
+}
+.sidebar-nav .menu-text {
+    display: inline-block;
+    transition: transform 0.40s ease;
+} 
+
+.sidebar-nav .nav-link:hover .menu-text {
+    transform: translateX(5px);
+}
+
+.sidebar-nav .menu-icon {
+    display: inline-block;
+    transition: transform 0.40s ease;
+}
+
+.sidebar-nav .nav-link:hover .menu-icon {
+    transform: rotateY(180deg);
+}
